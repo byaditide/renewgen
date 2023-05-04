@@ -386,7 +386,7 @@ form {
 
 @media (max-width: 360px) {
     .heading5-9rsv1 {
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
@@ -395,21 +395,21 @@ form {
         padding-top: 40px;
         padding-right: 40px;
         padding-bottom: 40px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     .section-zop4i {
         padding-top: 40px;
         padding-right: 40px;
         padding-bottom: 40px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     .section-6isw5 {
         padding-top: 40px;
         padding-right: 40px;
         padding-bottom: 40px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     .heading1-ttoif {
