@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inter:400,400,400,400,400,400,400,400,400,400,400');
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Loved+by+the+King|Archivo+Black');
 
 body {
     font-family: 'Inter', sans-serif;
@@ -66,6 +66,8 @@ img {
     justify-content: space-between;
     width: 100%;
     background-color: #ffffff;
+    color: #ffffff;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .flex-row {
@@ -139,7 +141,7 @@ footer {
 
 .col {
     width: 100%;
-    padding: 8px;
+    font-size: 17px;
 }
 
 .about-content-wrapper {
@@ -199,85 +201,78 @@ form {
 
 .text {
     padding-right: 20%;
+    color: #000000;
+    font-family: 'Almendra Display', display;
+    font-size: 17px;
 }
 
-.span-cn427 {
-    font-size: 18px;
+.section-hywz4 {
+    background-color: #000000;
+    color: #ffffff;
 }
 
-.div-nmqj6 {
-    font-size: 48px;
-}
-
-.heading5-9rsv1 {
-    font-size: 48px;
-    font-weight: 400;
-    color: #00bf63;
-}
-
-.section-zop4i {
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+.section-3mbj5 {
     background-color: #ffffff;
+    color: #ffffff;
 }
 
-.section-fsebf {
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+.footer-7jln2 {
     background-color: #ffffff;
+    color: #040404;
+    font-family: 'Abhaya Libre', serif;
 }
 
-.section-6isw5 {
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    background-color: #ffffff;
+.span-xpdjz {
+    color: #040404;
 }
 
-.heading1-6goze {
-    color: #00bf63;
-}
-
-.heading1-efnw4 {
-    color: #00bf63;
-}
-
-.heading1-x0owg {
-    color: #00bf63;
-}
-
-.footer-9r7eq {
-    background-color: #00bf63;
-}
-
-.footer-kbhow {
-    background-color: #ffffff;
-}
-
-.heading1-wll63 {
-    color: #a36d6d;
-}
-
-.image-owlfa {
-    width: 75px;
-}
-
-.heading1-ttoif {
-    color: #00bf63;
-    padding-right: 20%;
+.span-2wy0m {
+    color: #000000;
 }
 
 .heading1-wj0cl {
-    color: #00bf63;
+    font-size: 24px;
 }
 
 .heading1-o8l16 {
-    color: #00bf63;
+    font-size: 24px;
+}
+
+.heading1-ttoif {
+    font-size: 24px;
+}
+
+.body-23m59 {
+    background-color: #ffffff;
+}
+
+. {
+    color: #000000;
+}
+
+.link-ltaxw {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.image-6s1je {
+    width: 45px;
+}
+
+.bold-pju9r {
+    color: #00bb63;
+}
+
+.bold-4vgjd {
+    color: #00bb63;
+}
+
+.bold-7woto {
+    color: #00bb63;
+}
+
+.bold-8kkc9 {
+    color: #00bb63;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -375,61 +370,4 @@ form {
     .arrow {
         width: 24px;
     }
-
-    .col {
-        padding-top: 16px;
-        padding-right: 16px;
-        padding-bottom: 16px;
-        padding-left: 8px;
-    }
-}
-
-@media (max-width: 360px) {
-    .heading5-9rsv1 {
-        font-size: 18px;
-    }
-}
-
-@media (max-width:360px) {
-    .section-fsebf {
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-bottom: 40px;
-        padding-left: 0px;
-    }
-
-    .section-zop4i {
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-bottom: 40px;
-        padding-left: 0px;
-    }
-
-    .section-6isw5 {
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-bottom: 40px;
-        padding-left: 0px;
-    }
-
-    .heading1-ttoif {
-        font-size: 24px;
-        font-weight: 400;
-    }
-    
-    section {
-    padding-left: 0px;
-    }
-    
-    .section-fsebf {
-
-    padding-left: 0px;
-    
-}
-
-.section-6isw5 {
-    ;
-    padding-left: 80px;
-   
-}
 }
