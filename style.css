@@ -1,373 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Loved+by+the+King|Archivo+Black');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    background: white;
     color: black;
-    line-height: 130%;
-    font-weight: 400;
-    background-color: #f3f0e9;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-h1 {
-    line-height: 120%;
-    letter-spacing: -2px;
-    margin-bottom: 10px;
-    font-weight: 400;
-    margin-top: 10px;
-    font-size: 48px;
-}
-
-h2 {
-    font-size: 40.7px;
-    line-height: 90%;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-h3 {
-    font-size: 32.56px;
-    line-height: 100%;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
-h4 {
-    font-size: 26.05px;
-    line-height: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-h5 {
-    font-size: 16px;
-    line-height: 120%;
-    font-weight: 400;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 16px;
-}
-
-img {
-    max-width: 100%;
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    background-color: #ffffff;
-    color: #ffffff;
-    font-family: 'Abhaya Libre', serif;
+    padding: 20px;
 }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
+.logo img {
+    height: 50px;
 }
 
-.gap-large {
-    gap: 40px 40px;
+.contact-button a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #00bb63;
+    color: white;
+    border-radius: 5px;
 }
 
-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    width: 100%;
-    padding-right: 40px;
-    padding-left: 40px;
-    max-width: 1920px;
+.headline {
+    color: #00bb63; /* Updated */
+    padding: 50px;
+    text-align: left;
 }
 
-.project-card {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    row-gap: 14px;
-    flex-direction: column;
-    font-weight: 400;
+.mission-statement {
+    padding: 50px;
+    text-align: left;
 }
 
-.hero {
-    max-width: 990px;
+.subscribe {
+    padding: 50px;
+    text-align: left;
 }
 
-.flex-stretch {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-direction: row;
+#subscribe-form input {
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.flex-eqaul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+#subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00bb63;
+    color: white;
 }
 
 footer {
-    width: 100%;
-    background-color: #e4e2db;
-    padding-top: 40px;
-    padding-bottom: 40px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    font-size: 49.66px;
-    line-height: 120%;
+    align-items: left;
+    padding: 20px;
 }
 
-.gap-small {
-    column-gap: 12px;
-}
-
-.flex-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.col {
-    width: 100%;
-    font-size: 17px;
-}
-
-.about-content-wrapper {
-    padding: 40px;
-}
-
-.contact-input {
-    padding-bottom: 12px;
-    background-color: rgba(0, 0, 0, 0);
-    border-style: none none solid;
-    border-bottom-width: 1px;
-    border-bottom-color: black;
-    width: 100%;
-    margin-top: 24px;
-}
-
-.contact-button {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: white;
-    background-color: black;
-    border-style: none;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.slider-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 100%;
-    background-color: black;
-}
-
-.slider-menu-wp {
-    display: flex;
-    flex-direction: column;
-    row-gap: 18px;
-    align-items: center;
-    justify-content: center;
-}
-
-.active {
-    width: 14px;
-    height: 14px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.text {
-    padding-right: 20%;
-    color: #000000;
-    font-family: 'Almendra Display', display;
-    font-size: 17px;
-}
-
-.section-hywz4 {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.section-3mbj5 {
-    background-color: #ffffff;
-    color: #ffffff;
-}
-
-.footer-7jln2 {
-    background-color: #ffffff;
-    color: #040404;
-    font-family: 'Abhaya Libre', serif;
-}
-
-.span-xpdjz {
-    color: #040404;
-}
-
-.span-2wy0m {
-    color: #000000;
-}
-
-.heading1-wj0cl {
-    font-size: 24px;
-}
-
-.heading1-o8l16 {
-    font-size: 24px;
-}
-
-.heading1-ttoif {
-    font-size: 24px;
-}
-
-.body-23m59 {
-    background-color: #ffffff;
-}
-
-. {
-    color: #000000;
-}
-
-.link-ltaxw {
-    font-family: 'Archivo Black', sans-serif;
-}
-
-.image-6s1je {
-    width: 45px;
-}
-
-.bold-pju9r {
-    color: #00bb63;
-}
-
-.bold-4vgjd {
-    color: #00bb63;
-}
-
-.bold-7woto {
-    color: #00bb63;
-}
-
-.bold-8kkc9 {
-    color: #00bb63;
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .slider {
-        flex-direction: column-reverse;
-    }
-
-    .slider-menu-wp {
-        flex-direction: row;
-        gap: 18px 18px;
-    }
-
-    .flex-stretch {
-        gap: 24.72px 40px;
-    }
-
-    .flex-eqaul {
-        row-gap: 24.72px;
-    }
-
-    footer {
-        font-size: 18.46px;
-    }
-
-    .project-hero {
-        flex-direction: column;
-        gap: 14.72px 40px;
-    }
-
-    p {
-        margin: 0px;
-    }
-
-    .text {
-        padding-right: 0%;
-    }
-
-    h1 {
-        font-size: 32px;
-        letter-spacing: -1px;
-    }
-}
-
-@media (max-width:768px) {
-    section {
-        padding-top: 24.72px;
-        padding-right: 4%;
-        padding-bottom: 24.72px;
-        padding-left: 4%;
-    }
-
-    .flex-eqaul {
-        flex-direction: column;
-        row-gap: 24.72px;
-        width: 100%;
-    }
-
-    .text {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    .flex-reverse {
-        flex-direction: column-reverse;
-    }
-
-    h2 {
-        font-size: 24.18px;
-    }
-
-    h3 {
-        font-size: 19.34px;
-    }
-
-    .flex-row {
-        flex-wrap: wrap;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .project-card {
-        width: 100%;
-    }
-
-    .about-content-wrapper {
-        width: 100%;
-    }
-
-    .arrow {
-        width: 24px;
-    }
+.social-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
 }
