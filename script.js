@@ -1,5 +1,5 @@
 var submitURL = 'https://api.airtable.com/v0/appPJOzBmRaGNwHHM/Table%201?api_key=key0uDPUEu13V831Z';
-var form = $('#subscribe-form');
+var form = $('#my-form');
 form.on('submit', function(e){
    e.preventDefault();
    var email = $(this).find('input[name=email]').val();
@@ -14,7 +14,7 @@ form.on('submit', function(e){
     }
    };
   $.post(submitURL, data, function(data){
-     $('#submit-message').text('Thank you!');
+     $('#submit-message').text('Submitted!!!!');
      console.log('success',data)
   });
 });
