@@ -41,11 +41,12 @@
     <section class="subscribe">
         <h4>Subscribe to our newsletter</h4>
         <br>
-        <form id="subscribe-form" onsubmit="event.preventDefault(); postToAirtable()">
-            <input type="email" id="email" placeholder="Enter your email" required>
-            <button type="submit">Submit</button>
+        <form id="subscribe-form">
+        <input type="email" name="email" placeholder="Enter your email" required/>
+        <br>
+        <button type="submit">Submit</button>
         </form>
-        <p id="message"></p> <!-- Add this line -->
+        <div id="submit-message"></div>
     </section>
     
     <footer>
@@ -56,39 +57,8 @@
         </div>
         <p>&copy; 2023 Renewgen</p>
     </footer>
+<script src="script.js"></script>
 </body>
-
-<script>
-    function postToAirtable() {
-        var email = document.getElementById('email').value;
-    
-        fetch('https://api.airtable.com/v0/appPJOzBmRaGNwHHM/tbl0iyL4bNb8olkxM/', {
-            method: 'POST',
-            headers: {
-                'Authorization': 'Bearer patWJyuqcWZ19BsBl',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                'fields': {
-                    'Email': email
-                }
-            })
-        }).then(response => {
-            var messageElement = document.getElementById('message');
-            if (response.ok) {
-                messageElement.textContent = 'Thank you for subscribing!';
-                messageElement.style.color = 'green';
-                document.getElementById('email').value = ''; // Clear the input field
-            } else {
-                response.json().then(data => {
-                    console.log(data); // to inspect the error message
-                    messageElement.textContent = 'An error occurred. Please try again.';
-                    messageElement.style.color = 'red';
-                });
-            }
-        });
-    }
-</script>
 </html>
 
     
