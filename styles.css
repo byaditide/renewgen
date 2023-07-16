@@ -132,6 +132,7 @@ footer .footer-content {
 footer .footer-content .logo img {
   width: 100px;
   height: auto;
+  text-align: center;
 }
 
 footer .footer-content .social-links a {
@@ -188,7 +189,6 @@ footer p {
 
   footer .footer-content .logo img {
     margin-bottom: 20px;
-    text-align: center;
   }
 
   footer p {
