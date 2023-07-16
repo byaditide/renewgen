@@ -11,8 +11,8 @@ body {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #000000;
-  background-color: #ffffff;
+  color: #e6f1ff;
+  background-color: #0a192f;
 }
 
 .container {
@@ -24,131 +24,141 @@ body {
 /* Header */
 header.hero {
   position: relative;
-  background-color: #ffffff;
-  color: #000000;
   padding: 80px 0;
   text-align: center;
+
 }
 
 header.hero .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  font-size: 18px;
 }
 
 header.hero .logo img {
-  width: 80px;
+  width: 120px;
   height: auto;
 }
 
 header.hero nav ul {
   list-style: none;
+  margin-top: 40px;
 }
 
 header.hero nav ul li {
   display: inline-block;
-  margin-left: 20px;
-}
-
-header.hero nav ul li:first-child {
-  margin-left: 0;
+  margin: 0 10px;
 }
 
 header.hero nav ul li a {
-  color: #000000;
+  color: #e6f1ff;
   text-decoration: none;
+  font-size: 14px;
   transition: color 0.3s ease;
 }
 
 header.hero nav ul li a:hover {
-  color: #2ecc71;
+  text-decoration-line: underline;
 }
 
 header.hero .hero-content h1 {
-  font-size: 36px;
+  font-size: 48px;
   margin-bottom: 20px;
-  color: #2ecc71;
+  margin-top: 40px;
 }
 
 header.hero .hero-content p {
   font-size: 18px;
-  margin-bottom: 30px;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left: 20 px;
-  padding-right: 20 px;
+  margin-bottom: 40px;
 }
+
 
 header.hero .hero-content .cta-button {
   display: inline-block;
   padding: 12px 30px;
-  background-color: #2ecc71;
-  color: #fff;
+  color: #64ffda;
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  margin-top: 30px;
+  border: 2px solid #64ffda;
+  border-radius: 20px;
+  transition: border-color 0.3s ease;
 }
 
 header.hero .hero-content .cta-button:hover {
-  background-color: #27ae60;
+  border-color: #64ffda;
+  background-color: #64ffda;;
+  color: #0a192f;
+  font-weight: bold;
 }
 
 /* Sections */
 section {
-  padding: 80px 0;
-}
-
-section h2 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #2ecc71;
-}
-
-section p {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Footer */
-footer {
-  background-color: #ffffff;
-  color: #000000;
   padding: 40px 0;
   text-align: center;
 }
 
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+section h2 {
+  font-size: 36px;
   margin-bottom: 40px;
+  color: #a8b2d1;
 }
 
-footer .footer-content .logo img {
-  width: 100px;
-  height: auto;
+section p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #f8f8f8;
+}
+
+/* Footer */
+footer {
+  padding: 40px 0;
   text-align: center;
 }
 
-footer .footer-content .social-links a {
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .social-links {
+  margin-right: auto;
+}
+
+footer .social-links a {
   display: inline-block;
   margin-right: 10px;
-  color: #fff;
-  font-size: 24px;
+  color: #8892b0;
+  font-size: 18px;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-footer .footer-content .social-links a:last-child {
+footer .social-links a:last-child {
   margin-right: 0;
 }
 
-footer .footer-content .social-links a:hover {
-  color: #2ecc71;
+footer .social-links a:hover {
+  color: #e6f1ff;
+}
+
+footer .logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+footer .logo img {
+  width: 100px;
+  height: auto;
 }
 
 footer p {
@@ -156,16 +166,14 @@ footer p {
   margin-top: 20px;
 }
 
+
+
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
   header.hero .hero-content h1 {
-    font-size: 28px;
+    font-size: 36px;
   }
 
-  header.hero .hero-content p {
-    padding-left: 20 px;
-    padding-right: 20 px;
-  }
   header.hero .hero-content p {
     font-size: 16px;
   }
@@ -179,19 +187,15 @@ footer p {
     font-size: 16px;
   }
 
+  footer .container {
+    flex-direction: column;
+  }
+
   footer .footer-content {
     flex-direction: column;
   }
 
-  footer .footer-content .social-links {
+  footer .logo {
     margin-top: 20px;
-  }
-
-  footer .footer-content .logo img {
-    margin-bottom: 20px;
-  }
-
-  footer p {
-    font-size: 12px;
   }
 }
