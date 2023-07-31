@@ -78,11 +78,9 @@ header.hero .hero-content p {
 header.hero .hero-content .cta-button {
   display: inline-block;
   padding: 12px 30px;
-  color: #64ffda;
-  text-decoration: none;
-  border: 2px solid #64ffda;
-  border-radius: 20px;
-  transition: border-color 0.3s ease;
+  background-color: #eeeeee;
+  color: #111111;
+  text-decoration: bold;
 }
 
 header.hero .hero-content .cta-button:hover {
