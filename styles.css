@@ -80,7 +80,7 @@ header.hero .hero-content .cta-button {
   padding: 12px 30px;
   background-color: #eeeeee;
   color: #111111;
-  text-decoration: none;
+  font-weight: bold;
   border: 2px solid;
   border-radius: 20px;
   transition: border-color 0.3s ease;
